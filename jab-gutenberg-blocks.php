@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: InnerBlocks Test Block
- * Plugin URI: https://jbaker.media/
- * Description: Custom Gutenberg blocks, built by Josh
+ * Plugin URI: https://github.com/dfrank2112/using-wordpress-gutenbergs-innerblocks-component
+ * Description: Testing ground for new ideas
  * Author: Josh Baker
  * Author URI: https://jbaker.media/
- * Version: 0.0.1
+ * Version: 0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *

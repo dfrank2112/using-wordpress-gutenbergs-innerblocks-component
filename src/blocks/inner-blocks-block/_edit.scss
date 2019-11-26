@@ -1,0 +1,13 @@
+.wp-block-jab-inner-blocks-block {
+    .editor-inner-blocks {
+        width: 100%;
+    }
+
+    .editor-block-list__layout {
+        padding: 0 1rem !important;
+        .wp-block {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+}

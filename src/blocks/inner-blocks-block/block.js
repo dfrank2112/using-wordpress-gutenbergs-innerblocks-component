@@ -8,7 +8,6 @@ import edit from './edit';
 import save from './save';
 import * as icon from './icon';
 import namespace from '../../namespace';
-import attributes from './attributes';
 
 registerBlockType(`${ namespace }/inner-blocks-block`, {
     title: __('InnerBlocks Test Block', namespace),
@@ -21,7 +20,7 @@ registerBlockType(`${ namespace }/inner-blocks-block`, {
         __('JAB', namespace),
     ],
     category: 'common',
-    attributes,
+    attributes: [],
     edit,
     save
 });

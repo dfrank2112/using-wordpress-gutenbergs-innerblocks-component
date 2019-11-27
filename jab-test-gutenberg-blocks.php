@@ -9,13 +9,13 @@
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package JAB
+ * @package JABTEST
  */
 
 //  Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-function _get_plugin_url() {
+function _get_test_plugin_url() {
     static $plugin_url;
 
     if ( empty( $plugin_url ) ) {
@@ -26,5 +26,3 @@ function _get_plugin_url() {
 }
 
 include __DIR__ . '/php/enqueue-assets.php';
-
-add_action('enqueue_block_assets', 'jab_block_assets');

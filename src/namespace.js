@@ -1,2 +1,2 @@
-const namespace = 'jab';
+const namespace = 'jabtest';
 export default namespace;

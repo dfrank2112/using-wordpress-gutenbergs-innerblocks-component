@@ -5,6 +5,7 @@ const { InnerBlocks } = wp.editor;
 import namespace from '../../namespace';
 
 const edit = ({ className }) => {
+    const allowedBlocks = ['core/paragraph', 'core/heading'];
     return (
         <section
             className={
@@ -14,7 +15,9 @@ const edit = ({ className }) => {
                     is-back-end`
             }
         >
-            <InnerBlocks />
+            <InnerBlocks
+                allowedBlocks={ allowedBlocks }
+            />
         </section>
     );
 };

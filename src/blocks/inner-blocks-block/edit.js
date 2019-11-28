@@ -5,7 +5,25 @@ const { InnerBlocks } = wp.editor;
 import namespace from '../../namespace';
 
 const edit = ({ className }) => {
-    const allowedBlocks = ['core/paragraph', 'core/heading'];
+    const
+        allowedBlocks = [
+            'core/paragraph',
+            'core/heading',
+            'core/columns',
+            'core/column',
+            'core/image'
+        ],
+        template = [
+            [ 'core/columns', {}, [
+                [ 'core/column', {}, [
+                    [ 'core/image' ],
+                ] ],
+                [ 'core/column', {}, [
+                    [ 'core/paragraph', { placeholder: 'Enter side content...' } ],
+                ] ],
+            ] ]
+        ];
+
     return (
         <section
             className={
@@ -17,6 +35,7 @@ const edit = ({ className }) => {
         >
             <InnerBlocks
                 allowedBlocks={ allowedBlocks }
+                template={ template }
             />
         </section>
     );
